@@ -1,0 +1,261 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+section.welcome h1{
+     font-size: 55px;
+}
+main h2,section.order h2,section.info section h2,section.bottom h2{
+     font-size: 50px;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+     height: 600px;
+     background-image: url("food1.png");
+     background-repeat: no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     background-color: rgb(231, 238, 243);
+}
+main{
+     height: 1000px;
+     background-image: url("food2.png");
+     background-repeat: no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+main section{
+     height: 700px;
+     width: 700px;
+     float: right;
+     text-align: justify;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+main section span{
+     color: rgb(255, 115, 0);
+     margin-bottom: -40px;
+}
+main section h2{
+     margin-bottom: -10px;
+}
+main section button{
+     height: 35px;
+     width: 20%;
+     background-color: rgb(255, 115, 0);
+     color: white;
+     border-radius: 10px;
+     border: 1px solid white;
+}
+main section button i{
+     margin-left: 10px;
+}
+section.top{
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     width: 100%;
+     padding-right: 100px;
+}
+section.top i.fa-cart-shopping{
+     padding: 0 20px 0 20px;
+}
+section.top nav{
+     width: 30%;
+
+}
+section.top nav ul{
+     display: flex;
+     justify-content: space-between;
+}
+section.top nav ul li{
+     display: flex;
+}
+section.top nav ul li a{
+     text-decoration: none;
+     color: black;
+}
+section.welcome{
+     margin-left: 200px;
+}
+section.welcome form{
+     width: 600px;
+     margin-top: -25px;
+}
+section.welcome form input{
+     width: 400px;
+     padding: 5px 2px 5px 2px;
+}
+section.welcome form button{
+     width: 100px;
+     background-color: rgb(255, 115, 0);
+     color: white;
+     padding: 6px 2px 6px 2px;
+     margin-left: -5px;
+     border-radius: 0% 10% 10% 0%;
+     border: 1px solid white;
+}
+section.welcome nav{
+     width: 15%;
+     margin-left: -40px;
+}
+section.welcome nav ul{
+     display: flex;
+     justify-content: space-between;
+}
+section.welcome nav ul li{
+     display: flex;
+}
+section.welcome nav ul li a{
+     text-decoration: none;
+     color: black;
+}
+section.welcome nav ul li a i{
+     color: rgb(255, 115, 0);
+     margin-right: 5px;
+}
+section.order{
+     clear: both;
+}
+section.order{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+section.order a,section.info a,section.bottom a{
+     margin-top: 20px;
+     color: rgb(255, 115, 0);
+     text-decoration: none;
+}
+section.order h2,section.info h2{
+     margin-top: -5px;
+}
+section.order nav{
+     width: 30%;
+}
+section.order nav ul{
+     display: flex;
+     justify-content: space-between;
+}
+section.order nav ul li{
+     display: block;
+}
+section.order nav ul li.select{
+     color: rgb(255, 115, 0);
+     border-bottom: 1px solid rgb(255, 115, 0);
+     padding: 0 10px 10px 10px;
+}
+section.order section{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     width: 50%;
+}
+section.order section img{
+     height: 200px;
+     width: 200px;
+     margin: 10px 0 10px 0;
+}
+section.order > img,section.bottom > img{
+     height: 20px;
+     width: 100px;
+}
+section.info{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 100px;
+}
+section.info section{
+     text-align: center;
+}
+section.call{
+     display: flex;
+     flex-direction: column;
+}
+section.call i{
+     color: rgb(255, 115, 0);
+     margin-top: -20px;
+     margin-bottom: 20px;
+}
+section.call h4{
+     color: rgb(255, 115, 0);
+     font-size: 25px;
+     margin-top: -2px;
+     margin-bottom: -2px;
+}
+section.hours{
+     display: flex;
+     justify-content: space-between;
+     width: 25%;
+}
+section.mt,section.fs{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+}
+section.hours h5{
+     margin-top: -1px;
+     font-size: 20px;
+}
+section.image{
+     margin-bottom: 100px;
+}
+section.bottom{
+     height: 500px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+section.bottom img.guy{
+     height: 100px;
+     width: 100px;
+     margin-top: -10px;
+}
+section.bottom h6{
+     font-size: 30px;
+     margin-top: -5px;
+     margin-bottom: -2px;
+}
+section.bottom p{
+     width: 50%;
+     text-align: center;
+     font-style: italic;
+     line-height: 2;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+i.fa-caret-down{
+     color: white;
+}
